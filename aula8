@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon 1.ico" type="image/x-icon">
+<title>aula 8</title>
+<h1>Vai corinthians!!!</h1>
+</head>
+<body>
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo x<SUP>20</SUP> + 3</p>
+<h2>Texto subescrito</h2>
+<p>para inserir coisas do tipo H<SUB>2</SUB>0</p>
+</body>
+</html>
