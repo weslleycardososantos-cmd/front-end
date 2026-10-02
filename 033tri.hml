@@ -1,40 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de caixas</title>
-    <style>
-        h1{/*box level*/
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>links</title>
+<style>
+/* seletores personalizados
+# = id
+. = class
+: = pseudoclass
+:: = pseudo-element
+> = children
+*/
+body{
+font-family: Arial, Helvetica, sans-serif;
 
-            /*display: inline; pode mudar o elemento box level e vice versa */
-            background-color: rgb(245, 245, 245);
-            height: 300px;
-            width: 300px;
-           
-            /* solid e o border style e o px é do width*/
-           
+}
 
-            border: 10px solid rgb(5, 5, 5);
+a{
+color: red;
+text-decoration: none;
+font-weight: bold;
+}
 
-            padding: 10px, 20px;
-            margin: 20px auto 40px auto;
-            outline: 5px dashed rgb(255, 5, 5);
+a:visited{
+color: black;
+}
 
-        }
+a:active{
+color: purple;
+}
 
-        a{
-            border-width: 10px;
-            border-style: solid;
-            border-color: rgb(0, 81, 255);
-            padding: 10px;
-        }
+.especial{
+background-color: aqua;
+}
 
-    </style>
+.especial::before{
+content: '->';
+}
 
+.especial::after{
+content:'<-';
+}
+
+</style>
 </head>
 <body>
-    <h1>Exemplo de caixa box-level</h1>
-    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+<h1>personalizando links</h1>
+<ul>
+<li><a href="https://github.com/gustavoguanabara&quot&quot; target="_blank">Repositório Github</a></li>
+<li><a href="https://www.youtube.com/@CursoemVideo&quot&quot; class="especial">Canal do youtube</a></li>
+<li><a href="https://www.cursoemvideo.com/&quot&quot; class="especial">Site do cursoemvideo</a></li>
+</ul>
 </body>
 </html>
